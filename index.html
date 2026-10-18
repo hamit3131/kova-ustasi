@@ -127,6 +127,111 @@
  .tip-station{left:calc(1% + 161px);width:80px}
  .market-grid{gap:6px}
  .market-card{padding:7px}
+}/* Landscape play on phones */
+.rotate-hint{display:none;position:fixed;inset:0;z-index:1000;align-items:center;justify-content:center;padding:22px;background:radial-gradient(circle at 50% 40%,#f4d4aa,#42262eeF);color:#fff2dc;text-align:center}
+.rotate-card{max-width:310px;padding:24px 22px;border:3px solid #66383d;border-radius:20px;background:linear-gradient(160deg,#fff0d8,#dfab83);color:#61363a;box-shadow:0 9px 0 #4d2b32}
+.rotate-card span{display:block;font-size:44px;margin-bottom:8px}
+.rotate-card strong{display:block;font-size:20px}
+.rotate-card small{display:block;margin-top:8px;font-size:12px;line-height:1.5}
+@media (max-width:700px) and (orientation:portrait){.rotate-hint{display:flex}}
+@media (max-width:950px) and (max-height:560px) and (orientation:landscape){
+ .app{width:calc(100% - 8px);margin:3px auto 6px}
+ .hud{height:56px;min-height:0;gap:5px;padding:4px 6px;border-radius:8px 8px 3px 3px}
+ .brand{min-width:105px;gap:5px}
+ .logo{width:34px;height:34px;font-size:19px}
+ .brand-title{font-size:12px;line-height:1.05}
+ .brand-sub{font-size:7px}
+ .stat{min-width:50px;padding:4px 4px;gap:3px;font-size:9px}
+ .stat .ico{font-size:14px}
+ .stat small{font-size:6px}
+ .stat strong{font-size:10px}
+ .icon-btn{width:34px;height:38px;font-size:17px}
+ .frame{border-width:2px;border-top:0;border-radius:0 0 8px 8px}
+ .scene{min-height:0}
+ #shop-scene{height:calc(100vh - 72px);height:calc(100svh - 72px);min-height:290px}
+ .room:before{background-size:54px 54px;clip-path:polygon(0 53%,100% 53%,100% 100%,0 100%)}
+ .window{top:12px;left:15%;right:16%;height:155px;border-width:7px}
+ .door{top:13px;right:2%;width:12%;height:150px;border-width:6px}
+ .table{top:174px;width:min(145px,23vw);height:57px;border-width:4px}
+ .table:before{top:46px;height:48px}
+ .table-b{top:190px;right:21%}
+ .table-c{top:220px;right:2%;width:min(112px,18vw)}
+ .chair{transform:scale(.66);transform-origin:top left}
+ .chair-a{top:209px;left:2%}
+ .chair-b{top:210px;left:21%}
+ .chair-c{top:230px;right:18%;transform-origin:top right}
+ .chair-d{top:246px;right:1%;transform-origin:top right}
+ .tag{top:5px;left:7px;padding:5px 7px;font-size:8px}
+ .bubble{top:34px;left:25%;right:4%;min-height:75px;padding:9px 12px;border-radius:15px;font-size:clamp(13px,2.2vw,16px);line-height:1.2}
+ .bubble:after{left:22px;bottom:-15px;width:20px;height:20px}
+ .bubble small{font-size:7px;margin-bottom:3px}
+ .bubble #shop-order-line{margin-top:4px;font-size:9px}
+ .actions{top:119px;left:37%;right:4%;gap:6px}
+ .actions .btn{min-width:0;flex:1;min-height:38px;padding:6px 5px;font-size:10px}
+ .person{left:1%;bottom:11px;transform:scale(.45);transform-origin:bottom left}
+ .tip-station{left:calc(1% + 107px);right:auto;bottom:10px;width:66px;min-height:59px;padding:2px}
+ .tip-station .jar{font-size:20px;line-height:22px}
+ .tip-station strong{font-size:9px}
+ .tip-station small{font-size:6px}
+ .diamond-quest{left:auto;right:7px;top:auto;bottom:66px;width:132px;padding:4px 6px;font-size:8px}
+ .diamond-quest small{font-size:7px}
+ .counter-back{height:64px;border-top-width:6px}
+ .counter-label{right:8px;bottom:14px;font-size:8px}
+ .kitchen{min-height:0;padding-bottom:3px}
+ .k-head{gap:7px;padding:6px 8px}
+ .k-head h2{font-size:11px}
+ .k-head small{font-size:8px;margin-top:2px}
+ .steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;padding:0 8px 6px}
+ .step{min-width:0;padding:5px 2px;font-size:7px;line-height:1.1}
+ .step b{width:13px;height:13px;font-size:7px;margin-right:1px}
+ .prep-layout{grid-template-columns:minmax(0,1fr) minmax(205px,32%);gap:8px;padding:3px 8px 5px}
+ .workzone{min-height:calc(100svh - 126px);padding:8px;gap:6px}
+ .work-content{min-height:0;gap:7px}
+ .stage-title{font-size:10px}
+ .stage-help{font-size:9px;line-height:1.3}
+ .preparation-pair{min-height:0;gap:10px}
+ .flatbread{width:min(42vw,290px)}
+ .roll,.cutbox{width:min(44vw,390px)}
+ .bucket{width:min(185px,26vw);height:155px}
+ .bucket-handle{width:195px;height:105px;top:34px}
+ .bucket-wrap{min-height:165px}
+ .work-tools{max-width:none}
+ .work-tools .toolbox{padding:5px}
+ .work-tools .toolbox h4{font-size:8px;margin-bottom:4px}
+ .work-tools .ingredient-list{grid-template-columns:repeat(4,minmax(0,1fr));max-height:min(35vh,145px);gap:4px;padding:1px}
+ .work-tools .ingredient{min-height:60px;aspect-ratio:1.18;padding:3px 2px;gap:2px}
+ .work-tools .bin-food{height:26px}
+ .work-tools .bin-food i{font-size:13px}
+ .work-tools .ingredient .cell-name{font-size:6.5px;line-height:1.05}
+ .work-tools .ingredient small,.work-tools .ingredient em{font-size:6px}
+ .recipe-side{grid-template-columns:minmax(0,1fr);gap:5px}
+ .recipe-side .back-btn{min-height:34px;padding:6px;font-size:9px}
+ .ticket{padding:7px}
+ .ticket h3{font-size:10px;margin-bottom:4px}
+ .ticket p{font-size:8px;line-height:1.25}
+ .recipe-list{font-size:8px;line-height:1.15}
+ .instructions{padding:6px;font-size:8px;line-height:1.25}
+ .stage-actions .btn{min-height:38px;padding:6px;font-size:10px}
+ .progress-note{position:static;margin:0 8px;font-size:7px}
+ .market{min-height:calc(100svh - 66px);padding:8px 10px 12px}
+ .market-head{gap:8px;margin-bottom:7px}
+ .market-head .market-icon{font-size:24px}
+ .market-head h2{font-size:14px}
+ .market-head p{font-size:8px;line-height:1.2}
+ .market-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .market-card{min-height:120px;padding:6px}
+ .market-art{height:29px;font-size:22px}
+ .market-card h4{font-size:8px;margin:3px 0}
+ .market-card p{font-size:7px;line-height:1.2;margin-bottom:3px}
+ .market-card button{min-height:34px;padding:5px;font-size:8px}
+ .market-done .btn{min-height:38px;padding:6px}
+ .modal-back{padding:8px}
+ .modal{max-height:calc(100svh - 16px);padding:10px 12px}
+ .start-card{width:min(520px,100%);padding:14px 18px}
+ .start-emblem{font-size:30px}
+ .start-card>p:not(.start-kicker){margin:5px auto 8px}
+ .start-card>small{margin-top:7px;font-size:8px}
+ .shop-name-label input,.rename-row input{font-size:16px}
 }</style>
 </head>
 <body>
@@ -316,7 +421,7 @@ function advanceClock(){if(state.launchScreen||state.closed)return;state.minute+
 init();
 setInterval(advanceClock,1000);
 })();</script>
-</body>
+<div class="rotate-hint" id="rotate-hint" role="status" aria-live="polite"><div class="rotate-card"><span>📱↻</span><strong>Telefonunu yatay çevir</strong><small>Kova Ustası yatay ekranda daha rahat oynanır.</small></div></div></body>
 </html>
 
 
